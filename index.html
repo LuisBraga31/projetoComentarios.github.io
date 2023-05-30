@@ -10,7 +10,7 @@
 </head>
 <body>
 
-        <div class="form-comentario">
+        <form class="form-comentario">
 
             <div class="titulo">
                 <h3> Faça seu Comentário </h3>
@@ -21,6 +21,7 @@
                     Digite seu Nome:
                     <div class="form-input">
                       <input id="inputName" type="text" placeholder="Nome" required minlength="3">
+                      <small> O nome do usuário precisa ter no mínimo 3 caracteres </small>
                     </div>
                   </label>
             </div>
@@ -29,16 +30,17 @@
                 <label>
                     Digite seu Comentário:
                     <div class="form-input">
-                      <textarea id="inputComent" type="text" rows="4"required minlength="8"></textarea> 
+                      <textarea id="inputComent" type="text" rows="4"required minlength="2"></textarea> 
+                      <small> O comentário precisa ter no mínimo 2 caracteres </small>
                     </div>
                 </label>
             </div>
 
             <div class="botao">
-                <button id="buttonSend"> Comentar </button>
+                <button id="buttonSend" disabled> Comentar </button>
             </div>
 
-        </div>
+        </form>
 
         <div class="space-coments">
             
