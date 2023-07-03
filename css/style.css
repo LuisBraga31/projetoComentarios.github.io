@@ -4,6 +4,10 @@
     font-family: 'Arial', sans-serif;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     background-color: rgb(95, 95, 95);
     display: flex;
@@ -15,7 +19,7 @@ body {
 }
 
 .form-comentario {
-    width: 650px;
+    width: 50%;
     height: 340px;
     border-radius: 5px;
     background-color: white;
@@ -49,6 +53,7 @@ body {
     padding: 10px;
     border: 1px solid lightgray;
     font-size: 15px;
+    resize: none;
 }
 
 .form-input input:focus {
@@ -70,20 +75,16 @@ body {
     padding: 10px;   
     background-color: #3498db;
     transition: 0.4s;
-    
     font-size: 1em;
 }
 
-
-
 .space-coments {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: top;
     gap: 20px;
-    width: 650px;
+    width: 50%;
     border-radius: 5px;
     background-color: white;
     padding: 15px 15px 25px 15px;
@@ -120,7 +121,6 @@ body {
 label small {
     display: none;
 }
-
 
 label .error input:focus{
     border: 2px solid red;
